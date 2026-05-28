@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy &mdash; YouTube Shorts Manager</title>
+  <style>
+    :root { --fg:#1a1a1a; --muted:#5b6470; --line:#e4e7ec; --accent:#c4302b; --bg:#ffffff; --soft:#f7f8fa; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--fg); background:var(--bg); line-height:1.7; }
+    .wrap { max-width:760px; margin:0 auto; padding:48px 24px 72px; }
+    .back { display:inline-block; font-size:14px; color:var(--accent); text-decoration:none; margin-bottom:24px; }
+    h1 { font-size:30px; margin:0 0 6px; }
+    .updated { color:var(--muted); font-size:14px; margin:0 0 32px; }
+    h2 { font-size:20px; margin:36px 0 12px; padding-top:8px; }
+    h3 { font-size:16px; margin:22px 0 6px; }
+    p { margin:0 0 14px; }
+    ul { margin:0 0 14px; padding-left:22px; }
+    li { margin:7px 0; }
+    code { background:var(--soft); border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:13px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+    a { color:var(--accent); }
+    .callout { background:var(--soft); border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:8px; padding:16px 18px; margin:18px 0; font-size:15px; }
+    table { width:100%; border-collapse:collapse; font-size:15px; margin:8px 0 18px; }
+    th, td { text-align:left; padding:11px 13px; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { background:var(--soft); font-weight:600; }
+    .scope { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:13px; color:var(--accent); }
+    hr { border:none; border-top:1px solid var(--line); margin:36px 0; }
+    .muted { color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">&larr; Back to home</a>
+    <h1>Privacy Policy</h1>
+    <!-- Update this date to the day you submit for verification. -->
+    <p class="updated">Last updated: May 28, 2026</p>
+
+    <p>This Privacy Policy explains how <strong>YouTube Shorts Manager</strong> ("the application", "we") accesses, uses, stores, and shares information when you use it. The application is a desktop tool that an individual creator runs on their own computer to manage YouTube channels that they own.</p>
+
+    <div class="callout">
+      <strong>Summary:</strong> The application runs entirely on your own computer. It accesses your Google/YouTube data only to provide its features to you, stores authorization tokens only on your local device, and never sells or shares your data with any third party.
+    </div>
+
+    <h2>1. Who this policy is for</h2>
+    <p>The application is designed for a single user &mdash; the owner of the application installation &mdash; to manage their own YouTube channels. It is not a multi-tenant service and does not collect data from the general public.</p>
+
+    <h2>2. Information the application accesses</h2>
+    <p>When you authorize the application through Google OAuth, it can access the following data from the Google accounts and YouTube channels that <em>you</em> own and explicitly connect:</p>
+    <table>
+      <thead>
+        <tr><th>Google OAuth scope</th><th>Data accessed and how it is used</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="scope">.../auth/youtube.upload</span></td>
+          <td>Used to upload videos that you create with the application to your own YouTube channels, including optional video metadata (title, description, tags) and scheduled publish time that you provide.</td>
+        </tr>
+        <tr>
+          <td><span class="scope">.../auth/youtube.readonly</span></td>
+          <td>Used to read your own channel statistics (such as subscriber count and view count) and the list of videos on your own channels, so the application can display performance information to you.</td>
+        </tr>
+        <tr>
+          <td><span class="scope">.../auth/youtube.force-ssl</span></td>
+          <td>Used to update the privacy status of your own videos (switch between public and private) and to delete a video that you uploaded. YouTube requires this scope for any video update or delete action.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The application accesses only the channels you authorize. It does not access the data of any other user.</p>
+
+    <h2>3. How information is stored</h2>
+    <ul>
+      <li><strong>OAuth tokens</strong> (the credentials that let the application act on your behalf) are stored only in local files on your own computer. They are never transmitted to us or to any external server we control, because the application has no server backend.</li>
+      <li><strong>Generated content</strong> (videos, audio, captions) and any local logs are stored on your own computer.</li>
+      <li>We, the developer, do not receive, collect, or have access to any of your YouTube data or Google account data.</li>
+    </ul>
+
+    <h2>4. How information is shared</h2>
+    <p>The application sends data only to Google's own APIs in order to perform the actions you request:</p>
+    <ul>
+      <li><strong>YouTube Data API</strong> &mdash; to upload videos, read your channel data, and update or delete your videos.</li>
+    </ul>
+    <p>We do <strong>not</strong> sell your data, do <strong>not</strong> share your YouTube data with any third party, and do <strong>not</strong> use it for advertising or profiling.</p>
+
+    <h2>5. Limited Use disclosure</h2>
+    <div class="callout">
+      The application's use and transfer of information received from Google APIs to any other app will adhere to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.
+    </div>
+    <p>Specifically, data obtained through YouTube API scopes is used solely to provide and improve the user-facing features described above, is not transferred to others except as necessary to provide those features (i.e., calls to Google's own APIs), and is not used for serving advertisements.</p>
+
+    <h2>6. Data retention and deletion</h2>
+    <p>Because all data stays on your own computer, you remain in full control of it:</p>
+    <ul>
+      <li>You can revoke the application's access at any time from your Google Account at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+      <li>You can delete the locally stored authorization tokens by deleting the application's local credential files.</li>
+      <li>Uninstalling the application and deleting its folder removes all locally stored data.</li>
+    </ul>
+
+    <h2>7. Security</h2>
+    <p>Because the application runs locally and stores credentials only on your device, the security of that data depends on the security of your own computer and Google account. We recommend keeping your operating system up to date and protecting your device with a password.</p>
+
+    <h2>8. Children's privacy</h2>
+    <p>The application is a personal productivity tool for the channel owner and is not directed to children under 13.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted on this page with a revised "Last updated" date.</p>
+
+    <h2>10. Contact</h2>
+    <p>For any questions about this Privacy Policy, contact:<br />
+    <a href="mailto:barokemedia@gmail.com">barokemedia@gmail.com</a></p>
+
+    <hr />
+    <p class="muted">This application uses YouTube API Services. By using it you also agree to the
+      <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a> and the
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+  </div>
+</body>
+</html>
